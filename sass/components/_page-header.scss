@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.page {
+  background-color: $primary-text-color;
+  color: $title-text-color;
+  font-family: "roboto", sans-serif;
+}
+.header-section {
+  background-color: $white-color;
+  border-bottom: 2px solid $border-color;
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+
+.main-nav {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+  }
+}
+.main-nav,
+.label-box,
+.contact-information {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: 1200px;
+  }
+}
+.main-nav {
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.main-nav,
+.label-box,
+.contact-information {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}

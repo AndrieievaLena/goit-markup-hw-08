@@ -1,0 +1,116 @@
+.contact-information {
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-left: auto;
+    flex-direction: column;
+    margin-left: 64px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.contact-information {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mail-title {
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+  }
+
+  &__link {
+    @media screen and (min-width: $tablet) {
+      display: inline-flex;
+      align-items: center;
+      color: $second-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition: 250ms $timer-fuction;
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: inline-flex;
+      align-items: center;
+      color: $second-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition: 250ms $timer-fuction;
+      margin: 0px;
+    }
+  }
+  &__icon {
+    fill: $second-text-color;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition: 250ms $timer-fuction;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__link:hover .mail-title__icon,
+  &__link:focus .mail-title__icon {
+    fill: $accent-color;
+  }
+}
+.tel-title {
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+  }
+
+  &__link {
+    @media screen and (min-width: $tablet) {
+      display: inline-flex;
+      align-items: flex-end;
+      color: $second-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition: 250ms $timer-fuction;
+    }
+    @media screen and (min-width: $desktop) {
+      display: inline-flex;
+      align-items: center;
+      color: $second-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition: 250ms $timer-fuction;
+      margin-left: 30px;
+    }
+  }
+
+  &__icon {
+    fill: $second-text-color;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    transition: 250ms $timer-fuction;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__link:hover .tel-title__icon,
+  &__link:focus .tel-title__icon {
+    fill: $accent-color;
+  }
+}

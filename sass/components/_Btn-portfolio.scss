@@ -1,0 +1,35 @@
+.button-box {
+  margin-bottom: 50px;
+}
+
+.button-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+
+  .button-type &__list:not(:first-child) {
+    margin-left: 8px;
+  }
+  .button-type &__link {
+    background-color: $box-button;
+    color: $title-text-color;
+    border: none;
+    font-family: "roboto", sans-serif;
+    line-height: 1.62;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    transition: 250ms $timer-fuction;
+  }
+  .button-type &__link:hover,
+  .button-type &__link:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    box-shadow: $shadow-button;
+  }
+}

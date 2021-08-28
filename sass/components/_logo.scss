@@ -1,0 +1,40 @@
+.label-box {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-top: 16px;
+
+    margin-right: 88px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-right: 88px;
+    padding-top: 0px;
+  }
+  &__logo {
+    color: $logo-color;
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    padding-bottom: 19px;
+    text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: block;
+      font-size: 26px;
+      margin-right: 94px;
+    }
+  }
+
+  &__part-logo {
+    color: $accent-color;
+  }
+}

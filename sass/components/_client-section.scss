@@ -1,0 +1,90 @@
+.client {
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.client-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    margin-bottom: 30px;
+  }
+}
+.client-list {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    margin: -15px;
+  }
+}
+.client-content {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+.client-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  border: 1px solid $border-logo-company;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 250ms $timer-fuction;
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    fill: $logo-company;
+
+    height: 60px;
+    transition: 250ms $timer-fuction;
+    @media screen and (min-width: 480px) {
+      width: 100px;
+    }
+  }
+  .client-content:hover &__icon {
+    fill: $accent-color;
+  }
+  .client-content:focus-within {
+    border: 1px solid $accent-color;
+  }
+  .client-content:focus-within &__icon {
+    fill: $accent-color;
+  }
+}
+.client-content:hover {
+  border: 1px solid $accent-color;
+}
