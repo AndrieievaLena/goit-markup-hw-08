@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.min.css">
    
 </head>
@@ -19,6 +22,13 @@
                 
                     <div class="label-box">
                         <a class="label-box__logo" href="/"><span class="label-box__part-logo">Web</span>Studio</a>
+                    </div>
+                    <div >
+                        <button class="menu-toggle js-open-menu" aria-expandet="false" aria-controls="mobile-menu" type="button">
+                            <svg class="menu-toggle__icon">
+                                <use href="./images/icons.svg#icon-menu_mobile"></use>
+                            </svg>
+                        </button>
                     </div>
                     <div class="navigation-box">
                         <nav>   
@@ -311,6 +321,31 @@
 
                 </section>
                 </main>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggles js-close-menu">
+                          <svg class="menu-toggles__close-icon">
+                              <use href="./images/icons.svg#icon-close_mobile"></use>
+                          </svg>
+                    </button>
+                       <nav>
+                            <ul class="mobile-menu">
+                                <li class="mobile-menu__link"><a href="" class="link current">Студия</a></li>
+                                <li class="mobile-menu__link"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                                <li class="mobile-menu__link"><a href="" class="link">Контакты</a></li>
+                            </ul>
+                       </nav>
+                       <div class="mobile-contact">
+                           <a class="mobile-contact__tel"href="tel:+380961111111">+380961111111</a>
+                           <a class="mobile-contact__mail" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+                       </div>
+                       <div class="mobile-social">
+                           <a class="mobile-social__link" href="#">Instagram</a>
+                           <a class="mobile-social__link" href="#">Twitter</a>
+                           <a class="mobile-social__link" href="#">Facebook</a>
+                           <a class="mobile-social__link" href="#">LinkedIn</a>
+                       </div>
+
+                </div>
             <footer class="section-footer">
                 <div class="conteiner footer-block">
                    <div class="footer-tablet">
@@ -421,5 +456,10 @@
         </div>
        
         <script src="./model.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script defer src="js/mobile-menu.js"></script>
+    
     </body>
 </html>

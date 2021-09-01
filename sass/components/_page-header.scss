@@ -14,6 +14,15 @@ img {
   width: 100%;
   height: auto;
 }
+.conteiner {
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .page {
   background-color: $primary-text-color;
   color: $title-text-color;
@@ -29,7 +38,30 @@ img {
   }
   @media screen and (min-width: $desktop) {
     width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
   }
+}
+.menu-toggle {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.menu-toggle {
+  background-color: $white-color;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: 284px;
+}
+.menu-toggle__icon {
+  width: 40px;
+  height: 40px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .main-nav {
@@ -53,6 +85,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .main-nav,
@@ -62,4 +96,18 @@ img {
     display: flex;
     align-items: center;
   }
+}
+.menu-container {
+  background-color: $white-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+  transform: translateX(0);
 }

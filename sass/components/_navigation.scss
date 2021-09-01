@@ -7,13 +7,8 @@
       margin-left: 50px;
     }
   }
-  @media screen and (min-width: $tablet) {
+  .navigation-box {
     display: flex;
-    margin: 0;
-    padding-left: 0;
-    .site-nav &__title + .site-nav__title {
-      margin-left: 50px;
-    }
   }
 
   &__link {

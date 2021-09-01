@@ -1,5 +1,7 @@
 .button-box {
-  margin-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .button-type {
@@ -8,9 +10,21 @@
   justify-content: center;
   margin: 0px;
   padding: 0px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 45px;
+  }
 
   .button-type &__list:not(:first-child) {
-    margin-left: 8px;
+    @media screen and (min-width: $tablet) {
+      margin-left: 8px;
+    }
+  }
+  .button-type &__list {
+    @media screen and (max-width: 767px) {
+      margin: 15px 5px 0px 0px;
+    }
   }
   .button-type &__link {
     background-color: $box-button;

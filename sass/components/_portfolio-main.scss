@@ -1,19 +1,48 @@
 .main {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .main-title {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * 30px);
-  margin-left: calc(-1 * 30px);
-  padding: 0px;
-  margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    padding: 0px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    padding: 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
+    padding: 0px;
+    margin-bottom: 0;
+  }
 }
+
 .main-title > .main-list {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-top: $card-set;
-  margin-left: $card-set;
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: $card-set;
+    margin-left: $card-set;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 }
 
 .main-title .card-content__link {
@@ -22,11 +51,23 @@
   font-size: 18px;
   line-height: 1.1;
   letter-spacing: 0.06em;
+  @media screen and (min-width: $tablet) {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
 }
 .card-content {
   padding: 20px 24px;
   border: 2px solid $border-color;
   border-top: 0;
+  @media screen and (min-width: $tablet) {
+    padding: 20px 24px 56px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 20px 24px;
+  }
   .card-content__link {
     margin: 0px;
   }
@@ -36,6 +77,11 @@
     letter-spacing: 0.03em;
     margin-top: 20px;
     margin-bottom: 0px;
+  }
+}
+.poster {
+  @media screen and (min-width: $tablet) {
+    padding: 20px 24px 20px;
   }
 }
 .main-block {

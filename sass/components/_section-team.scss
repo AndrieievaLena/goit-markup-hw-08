@@ -1,7 +1,4 @@
 .section-team {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-  // background-color: $secondary-primary-color;
   @media screen and (max-width: 767px) {
     width: 480px;
     padding-top: 60px;
@@ -18,13 +15,20 @@
     margin-right: auto;
     background-color: $secondary-primary-color;
   }
+  @media screen and (min-width: $desktop) {
+    width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $secondary-primary-color;
+  }
 }
-// .team-block .team-list {
-//   box-shadow: $footer-color;
-//   border-radius: 0px 0px 4px 4px;
-// }
+.team-block .team-list {
+  @media screen and (min-width: $desktop) {
+    box-shadow: $footer-color;
+    border-radius: 0px 0px 4px 4px;
+  }
+}
 .team-name {
-  // margin-bottom: 50px;
   margin-top: 0;
   color: $title-text-color;
   font-weight: 700;
@@ -44,6 +48,17 @@
     align-items: center;
     margin-bottom: 30px;
   }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
 }
 .team-block .team-list {
   padding: 0px;
@@ -52,6 +67,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -71,6 +92,9 @@
     &__detalis:not(:last-child) {
       margin-bottom: 30px;
     }
+    @media screen and (min-width: $desktop) {
+      background-color: $white-color;
+    }
   }
 
   &__description {
@@ -84,6 +108,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0px;
+      color: $title-text-color;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      margin-top: 30px;
+      margin-bottom: 0px;
     }
   }
   &__name {
@@ -107,6 +141,13 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 10px;
       margin-top: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      padding-bottom: 0;
+      color: $second-text-color;
+      font-size: 16px;
     }
   }
 }

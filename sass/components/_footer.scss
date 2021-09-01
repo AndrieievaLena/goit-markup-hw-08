@@ -14,6 +14,17 @@
     margin-right: auto;
     margin-left: auto;
   }
+  @media screen and (min-width: $desktop) {
+    width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.footer-block {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer-tablet {
   @media screen and (min-width: $tablet) {
@@ -29,15 +40,13 @@
     flex-direction: column;
     align-items: center;
   }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 70px;
+  }
 }
-.adress-footer__street {
-  color: $white-color;
-  font-size: 14px;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  margin-bottom: 8px;
-  line-height: 1.7;
-}
+
 .contact-footer {
   padding: 0px;
   margin: 0;
@@ -74,6 +83,18 @@
     flex-direction: column;
     align-items: center;
   }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__street {
+    color: $white-color;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+    line-height: 1.7;
+  }
 }
 .footer-box {
   @media screen and (min-width: $tablet) {
@@ -89,6 +110,11 @@
     // margin-left: 70px;
     align-items: center;
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 93px;
   }
   &__title {
     font-weight: 700;
