@@ -1,9 +1,6 @@
 .label-box {
   @media screen and (min-width: $tablet) {
     display: flex;
-    padding-top: 16px;
-
-    margin-right: 88px;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -21,7 +18,7 @@
     padding-bottom: 19px;
     text-decoration: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1119px) {
       font-size: 24px;
     }
     @media screen and (min-width: $desktop) {

@@ -1,0 +1,36 @@
+.nav-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &__menu-icon {
+    fill: black;
+    transition: fill 250ms $timer-fuction;
+  }
+  &__menu-icon:hover,
+  &__menu-icon:focus {
+    fill: $accent-color;
+  }
+}
+.menu-toggle {
+  position: absolute;
+  height: 19px;
+  top: 15px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  &__menu-icon {
+    fill: black;
+    transition: fill 250ms $timer-fuction;
+  }
+  &__menu-icon:hover,
+  &__menu-icon:focus {
+    fill: $accent-color;
+  }
+}

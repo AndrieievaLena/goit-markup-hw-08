@@ -1,34 +1,41 @@
 .feature-section {
-  @media screen and (max-width: 768px) {
-    padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-  @media screen and (min-width: $tablet) {
-    // width: 768px;
-    padding: 60px 0px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin: 0;
-    padding: 94px 0px;
-    margin-right: auto;
+
+  &__conteiner {
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
     margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__title {
+    display: none;
   }
 }
 .feature-list {
   margin: 0;
   padding: 0px;
 
-  @media screen and (max-width: 768px) {
-    width: 450px;
-  }
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 738px;
+    justify-content: center;
     margin: -15px;
   }
   @media screen and (min-width: $desktop) {
-    width: 1200px;
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -40,7 +47,7 @@
 }
 .feature-list .list + .list {
   @media screen and (min-width: $desktop) {
-    // margin-left: 30px;
+    margin-left: 30px;
   }
 }
 .list {
@@ -60,22 +67,20 @@
     align-items: center;
     margin-bottom: 30px;
     background-color: $icon-background;
-    width: 450px;
+
     height: 120px;
     border-radius: 4px;
     @media screen and (max-width: 768px) {
       margin-bottom: 30px;
     }
-    @media screen and (min-width: $tablet) {
-      width: 354px;
-    }
+
     @media screen and (min-width: $desktop) {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 30px;
       background-color: $icon-background;
-      width: 270px;
+
       height: 120px;
       border-radius: 4px;
     }
@@ -108,21 +113,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 450px;
+
       text-align: center;
       margin-bottom: 10px;
     }
     @media screen and (min-width: $tablet) {
       display: flex;
       justify-content: flex-start;
-      width: 354px;
     }
     @media screen and (min-width: $desktop) {
       color: $title-text-color;
       margin-top: 0;
       margin-bottom: 10px;
       text-transform: uppercase;
-      width: 270px;
     }
   }
 
@@ -133,20 +136,19 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    // max-width: 270px;
+
     @media screen and (max-width: 768px) {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: auto;
       text-align: start;
-      width: 450px;
+
       margin-bottom: 30px;
     }
     @media screen and (min-width: $tablet) {
       display: flex;
       justify-content: flex-start;
-      width: 354px;
     }
     @media screen and (min-width: $desktop) {
       margin-top: 0;
@@ -155,7 +157,6 @@
       font-size: 14px;
       line-height: 1.7;
       letter-spacing: 0.03em;
-      width: 270px;
     }
   }
 }

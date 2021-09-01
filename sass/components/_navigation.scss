@@ -1,59 +1,46 @@
-.site-nav {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    margin: 0;
-    padding-left: 0;
-    .site-nav &__title + .site-nav__title {
-      margin-left: 50px;
-    }
+.nav-box {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
-  .navigation-box {
-    display: flex;
-  }
-
-  &__link {
-    color: $title-text-color;
-    display: block;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    text-decoration: none;
-    transition: 250ms $timer-fuction;
-    position: relative;
-  }
-
-  &__link:hover,
-  &__link:focus {
-    color: $accent-color;
-  }
-  &__link:hover::after,
-  &__link:focus::after {
-    opacity: 1;
-  }
-  &__link.current {
-    color: $accent-color;
-  }
-  &__link.current::after {
-    opacity: 1;
-  }
-  &__link::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: $accent-color;
-    border-radius: 2px;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 250ms $timer-fuction;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 .site-nav {
-  @media (max-width: 767px) {
-    display: none;
+  display: flex;
+  &__list:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.site-nav__item {
+  color: $title-text-color;
+  padding: 27px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+  }
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 250ms $timer-fuction;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.site-nav__item--active {
+  position: relative;
+  color: $accent-color;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 1.5px;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
   }
 }

@@ -1,29 +1,26 @@
 .section-footer {
   background-color: $dark-section;
-  @media screen and (max-width: 767px) {
-    width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-right: auto;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__conteiner {
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      width: 1200px;
+    }
+    max-width: 1600px;
     margin-left: auto;
-  }
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     margin-right: auto;
-    margin-left: auto;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 1600px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-.footer-block {
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .footer-tablet {
