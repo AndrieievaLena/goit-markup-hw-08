@@ -457,8 +457,8 @@ img {
 }
 
 .hero-section {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img-mobile-480.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mobile-480.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -469,8 +469,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-hero.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img-tablet-768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-tablet-768.jpg);
   }
 }
 
@@ -478,8 +478,8 @@ img {
   .hero-section {
     min-height: 600px;
     max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop-hero.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img-desktop-1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-desktop-1600.jpg);
   }
 }
 
@@ -1095,6 +1095,15 @@ img {
           align-items: center;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social__link:hover, .team-social__link:focus {
+  background-color: #2196f3;
+}
+
+.team-social__link:hover svg,
+.team-social__link:focus svg {
+  fill: #ffffff;
 }
 
 .team-social__link:not(:last-child) {
@@ -2756,6 +2765,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .button-box {
+    margin-bottom: 50px;
+  }
+}
+
 .button-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2864,7 +2879,6 @@ img {
     margin-top: calc(-1 * 30px);
     margin-left: calc(-1 * 30px);
     padding: 0px;
-    margin-bottom: 0;
   }
 }
 

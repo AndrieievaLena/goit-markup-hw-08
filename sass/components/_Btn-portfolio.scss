@@ -2,6 +2,9 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .button-type {

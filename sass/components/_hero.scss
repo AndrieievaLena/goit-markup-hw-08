@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Header.jpg);
+    url(../images/hero-img-mobile-480.jpg);
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -12,7 +12,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/tablet-hero.jpg);
+      url(../images/hero-img-tablet-768.jpg);
   }
   @media screen and (min-width: 1200px) {
     min-height: 600px;
@@ -22,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/desktop-hero.jpg);
+      url(../images/hero-img-desktop-1600.jpg);
   }
   background-position: center;
   background-repeat: no-repeat;
