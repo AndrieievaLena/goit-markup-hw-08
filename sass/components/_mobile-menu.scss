@@ -37,6 +37,7 @@
   &__items {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -67,6 +68,7 @@
   &__contacts {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   &__tel {
     font-style: normal;
@@ -92,6 +94,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
   }
   &__item {
     padding: 5px 15px;

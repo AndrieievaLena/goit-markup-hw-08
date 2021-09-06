@@ -535,7 +535,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero__name {
-    max-width: 690px;
+    max-width: 600px;
     padding-top: 200px;
     font-size: 44px;
     line-height: 1.37;
@@ -2660,6 +2660,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0;
 }
 
 .navigation-box__item:not(:last-child) {
@@ -2702,6 +2703,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0;
 }
 
 .navigation-box__tel {
@@ -2732,6 +2734,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
 }
 
 .social-box__item {
@@ -2767,7 +2770,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .button-box {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
@@ -2792,7 +2795,6 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-top: 45px;
   }
 }
 
@@ -2839,7 +2841,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .main {
     padding-top: 60px;
     padding-bottom: 60px;

@@ -3,7 +3,7 @@
     margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
@@ -16,7 +16,6 @@
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 45px;
   }
 
   .button-type &__list:not(:first-child) {
