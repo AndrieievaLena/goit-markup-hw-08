@@ -887,6 +887,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 30px;
+    font-size: 28px;
   }
 }
 
@@ -1164,6 +1165,7 @@ img {
 @media screen and (max-width: 767px) {
   .client-title {
     margin-bottom: 30px;
+    font-size: 28px;
   }
 }
 
