@@ -103,7 +103,7 @@
     height: 60px;
     transition: 250ms $timer-fuction;
     @media screen and (min-width: 480px) {
-      // width: 100px;
+      width: 100px;
     }
   }
   .client-content:hover &__icon {
