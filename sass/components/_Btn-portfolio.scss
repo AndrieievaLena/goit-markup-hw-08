@@ -5,6 +5,9 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 60px;
   }
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 40px;
+  }
 }
 
 .button-type {

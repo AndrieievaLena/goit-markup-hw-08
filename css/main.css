@@ -2782,6 +2782,12 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .button-box {
+    margin-bottom: 40px;
+  }
+}
+
 .button-type {
   display: -webkit-box;
   display: -ms-flexbox;
